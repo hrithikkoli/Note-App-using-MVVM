@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        getSupportActionBar().setTitle("My Notes");
         viewModel = new ViewModelProvider( this,(ViewModelProvider.Factory)ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication()))
                 .get(ExpenseViewModel.class);
         helper = DatabaseHelper.getInstance(this);

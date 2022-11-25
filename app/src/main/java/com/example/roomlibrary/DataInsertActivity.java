@@ -16,6 +16,7 @@ public class DataInsertActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDataInsertBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("My Notes");
         String type = getIntent().getStringExtra("type");
         if (type.equals("update")){
             setTitle("update");
